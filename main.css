@@ -1,0 +1,13 @@
+@font-face {
+    font-family: youtooz;
+    src: url(LuckiestGuy-Regular.ttf);
+}
+
+h1{
+    font-family: youtooz;
+    letter-spacing: 1px;
+}
+
+section#LiveNowText h1{
+    color: deeppink;
+}
