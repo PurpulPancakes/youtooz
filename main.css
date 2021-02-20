@@ -3,11 +3,86 @@
     src: url(LuckiestGuy-Regular.ttf);
 }
 
+@font-face {
+    font-family: smooth;
+    src: url(NotoSansJP-Bold.otf);
+}
+
+html{
+    text-align: center;
+}
+
+html img{
+    width: 10%;
+}
+
 h1{
     font-family: youtooz;
     letter-spacing: 1px;
+    font-size: 200%;
+}
+
+a{
+    text-decoration: none;
+}
+
+dd{
+    margin-left: 0%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 5%;
+    color: white;
+    font-family: smooth;
 }
 
 section#LiveNowText h1{
-    color: deeppink;
+    padding-top:2%;
+    padding-bottom:5%;
+    color: #FF466B;
+}
+
+/* section LivePurpul */
+
+section#LivePurpul{
+    display: block;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section#LivePurpul img{
+    width: 30%;
+}
+
+section#LivePurpul dd{
+    background: linear-gradient(90deg, rgba(87,53,113,1) 20%, rgba(153,119,188,1) 80%);
+    border-radius: 25px;
+}
+
+section#LivePurpul h1{
+    color: #7A4E9D;
+    font-size: 150%;
+}
+
+section#LivePurpul h3{
+    color: #A9A9A9;
+    font-family: smooth;
+    font-size: 80%;
+}
+
+/* section UpcomingPurpul */
+
+section#UpcomingPurpul h1{
+    color: transparent;  
+    text-shadow: 0 0 0 #A9A9A9;
+    font-size: 150%;
+}
+
+/* section GonePurpul */
+
+section#GonePurpul h1{
+    color: #A9A9A9;
+    font-size: 150%;
 }
