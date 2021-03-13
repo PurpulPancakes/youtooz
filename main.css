@@ -43,13 +43,59 @@ section#LiveNowText h1{
     color: #FF466B;
 }
 
+section#UpcomingText h1{
+    padding-top:2%;
+    padding-bottom:5%;
+}
+
+section#Footer{
+    margin-top:5%;
+    background: #FF466B;
+    color: white;
+    border: solid 5px #FF466B;
+}
+
+section#FooterTextIntro{
+    padding-top: 3%;
+}
+
 /* section LivePurpul */
+
+section#LiveTooz{
+    position: relative;
+    -webkit-perspective: 523px;
+    perspective: 523px;
+}
 
 section#LivePurpul{
     display: block;
     width: 35%;
     margin-left: auto;
     margin-right: auto;
+}
+
+div#LiveBackgroundBox{
+    background: #eedeff;
+    width: 350px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: -13%;
+    left: 37.5%;
+    z-index: -25;
+    transition: 0.25s;
+    -webkit-transform: rotateX(10deg) rotateY(-5deg);
+    transform: rotateX(10deg) rotateY(-5deg);
+}
+
+#LivePurpul:hover #LiveBackgroundBox{
+    transition: 0.25s;
+    top: -5%;
+    left: 38%;
+    height: 325px;
+    -webkit-transform: rotateX(-10deg) rotateY(10deg);
+    transform: rotateX(-10deg) rotateY(10deg);
 }
 
 section#LivePurpul img{
@@ -71,7 +117,7 @@ section#LivePurpul dd {
     );
     border-radius: 25px;
     z-index: 1;
-  }
+}
   
   section#LivePurpul dd::before {
     position: absolute;
@@ -89,15 +135,26 @@ section#LivePurpul dd {
     z-index: -1;
     transition: opacity 0.25s linear;
     opacity: 0;
-  }
+}
   
   section#LivePurpul:hover dd::before {
     opacity: 1;
     border-radius: 25px;
-  }
+}
 
 section#LivePurpul h1{
-    color: #7A4E9D;
+    background: -webkit-linear-gradient(360deg, hsl(270, 34%, 60%), hsl(274, 36%, 33%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 150%;
+    margin-top: 3%;
+    margin-bottom: 0%;
+}
+
+section#LivePurpul:hover h1{
+    background: -webkit-linear-gradient(180deg, hsl(270, 34%, 60%), hsl(274, 36%, 33%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 150%;
     margin-top: 3%;
     margin-bottom: 0%;
@@ -120,15 +177,188 @@ section#LivePurpul p{
 
 /* section UpcomingPurpul */
 
+section#UpcomingTooz{
+    position: relative;
+    -webkit-perspective: 523px;
+    perspective: 523px;
+}
+
+section#UpcomingPurpul{
+    display: block;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#UpcomingBackgroundBox{
+    background: #F5F5F5;
+    width: 350px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: -13%;
+    left: 37.5%;
+    z-index: -25;
+    transition: 0.25s;
+    -webkit-transform: rotateX(10deg) rotateY(-5deg);
+    transform: rotateX(10deg) rotateY(-5deg);
+}
+
+#UpcomingPurpul:hover #UpcomingBackgroundBox{
+    transition: 0.25s;
+    background: #FFDBDC;
+    top: -5%;
+    left: 38%;
+    height: 325px;
+    -webkit-transform: rotateX(-10deg) rotateY(10deg);
+    transform: rotateX(-10deg) rotateY(10deg);
+}
+
+section#UpcomingPurpul img{
+    -webkit-filter: grayscale(100%) brightness(0);
+    filter: grayscale(100%) brightness(0);
+    width: 30%;
+    transition: 0.25s;
+}
+
+section#UpcomingPurpul:hover img{
+    width: 32%;
+    transition: 0.25s;
+}
+
+section#UpcomingPurpul dd{
+    border-radius: 25px;
+    background: #A9A9A9;
+    color: white;
+    transition: 0.25s;
+}
+
+section#UpcomingPurpul:hover dd{
+    background: black;
+}
+
 section#UpcomingPurpul h1{
     color: transparent;  
     text-shadow: 0 0 0 #A9A9A9;
     font-size: 150%;
 }
 
+section#UpcomingPurpul:hover h1{
+    color: transparent;  
+    text-shadow: 0 0 0 #FF4774;
+    font-size: 150%;
+}
+
+section#UpcomingPurpul h3{
+    color: #A9A9A9;
+    font-family: smooth;
+    font-size: 80%;
+    padding-top: 3%;
+    margin-bottom: 0%;
+}
+
+section#UpcomingPurpul p{
+    color: black;
+    font-family: smooth;
+    font-size: 100%;
+    margin-top: 1%;
+}
+
 /* section GonePurpul */
 
+section#GoneTooz{
+    position: relative;
+    -webkit-perspective: 523px;
+    perspective: 523px;
+}
+
+section#GonePurpul{
+    display: block;
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#GoneBackgroundBox{
+    background: #F5F5F5;
+    width: 350px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: -13%;
+    left: 37.5%;
+    z-index: -25;
+    transition: 0.25s;
+    -webkit-transform: rotateX(10deg) rotateY(-5deg);
+    transform: rotateX(10deg) rotateY(-5deg);
+}
+
+#GonePurpul:hover #GoneBackgroundBox{
+    transition: 0.25s;
+    background: #eedeff;
+    top: -5%;
+    left: 38%;
+    height: 325px;
+    -webkit-transform: rotateX(-10deg) rotateY(10deg);
+    transform: rotateX(-10deg) rotateY(10deg);
+}
+
+section#GonePurpul img{
+    -webkit-filter: grayscale(75%) brightness(1);
+    filter: grayscale(75%) brightness(1);
+    width: 30%;
+    transition: 0.25s;
+}
+
+section#GonePurpul:hover img{
+    -webkit-filter: grayscale(0%) brightness(1);
+    filter: grayscale(0%) brightness(1);
+    width: 32%;
+    transition: 0.25s;
+}
+
+section#GonePurpul dd{
+    border-radius: 25px;
+    background: #A9A9A9;
+    color: white;
+    transition: 0.25s;
+}
+
+section#GonePurpul:hover dd{
+    background: black;
+}
+
 section#GonePurpul h1{
-    color: #A9A9A9;
+    background: -webkit-linear-gradient(360deg, #A9A9A9, #A9A9A9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 150%;
+    margin-top: 3%;
+    margin-bottom: 0%;
+}
+
+section#GonePurpul:hover h1{
+    background: -webkit-linear-gradient(180deg, hsl(270, 34%, 60%), hsl(274, 36%, 33%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 150%;
+    margin-top: 3%;
+    margin-bottom: 0%;
+}
+
+section#GonePurpul h3{
+    color: #A9A9A9;
+    font-family: smooth;
+    font-size: 80%;
+    padding-top: 3%;
+    margin-bottom: 0%;
+}
+
+section#GonePurpul p{
+    color: black;
+    font-family: smooth;
+    font-size: 100%;
+    margin-top: 1%;
 }
